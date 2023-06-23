@@ -1,0 +1,142 @@
+.dropmenu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+    padding: 0;
+}
+  
+.dropmenu li {
+    background: #59998d;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgba(82,179,79,0.7) inset,-1px -1px 1px rgba(115,139,179,0.7) inset;
+    position: relative;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+  
+.dropmenu li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    visibility: hidden; 
+    opacity: 0;
+    perspective: 500px;
+}
+  
+  
+.dropmenu ul li {
+    transform: rotateY(90deg);
+    transform-origin: 50% 0;
+    transition: .5s;
+}
+  
+.dropmenu li:hover li {
+    transform: rotateY(0);
+}
+.dropmenu ul li:nth-child(2) {
+    transition-delay: .1s;
+}
+.dropmenu ul li:nth-child(3) {
+    transition-delay: .2s;
+}
+.dropmenu ul li:nth-child(4) {
+    transition-delay: .3s;
+}
+  
+.dropmenu li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+  
+  
+.dropmenu li ul li {
+    width: 100px;
+}
+.dropmenu li ul li a {
+    text-align: left;
+    padding: 7px 10px;
+    border-top: 1px solid #728db3; 
+}
+  
+.dropmenu li a {
+    margin: 0;
+    padding: 7px 0;
+    display: block;
+    color: #f8d800;
+    font: bold 11px "游ゴシック", Helvetica;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+  
+.dropmenu li a:hover{
+    background: #39796d;
+}
+  
+.dropmenu li:hover > a {
+    background: #39796d;
+}
+  
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    height: 40px;
+    display: flex;
+    align-content: space-around;
+}
+  
+    
+.navbar-l {
+    margin: auto 0;
+}
+  
+.navlogo {
+    color: #59998d;
+    font: bold 20px "游ゴシック", Helvetica;
+    text-align: left;
+    margin: auto 8px auto 0px;
+    white-space: nowrap;
+}
+.navbar-r {
+    background: #59998d;
+    box-shadow: 1px 1px 1px rgba(82,179,79,0.7) inset,
+    -1px -1px 1px rgba(115,139,179,0.7) inset,
+    0px 1px 3px #728db3;
+    width: 100%;
+    margin: auto 0;
+    padding: 0;
+}
+
+.navbar-box {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+.top-box {
+    position: relative;
+}
+
+@media screen and (max-width:880px) { 
+    .navbar-box {
+        position: relative;
+        width: 100%;
+        margin-bottom:10px;
+        z-index: 99;
+    }
+    .dropmenu {
+        display:contents;
+    }
+    .dropmenu li {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        display: contents;
+    }
+}

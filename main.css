@@ -1,0 +1,98 @@
+body{
+    border: solid 2px #000000;
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    background-color: rgb(86, 219, 86);
+    margin:0px 5px;
+    text-align: center;
+    border-radius: 30px;
+    border: solid 2px #000000;
+}
+.title3{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    border: solid 4px #8ec6ff;
+    border-radius: 20px;
+    margin: 3px 5px;
+    padding:1px 10px;
+}
+a:hover{
+    opacity:0.5;
+    font-size: 24px;
+}
+hr {
+    /*border: none;*/
+    background-color: #f0fff6;
+    border-top: 2px dashed #117f33;
+    border-radius: 5px;
+    border-width: 6px;
+}
+.pic_title{
+    background-color: #117f33;
+    border-radius: 30px;
+    border: solid 2px #000000;
+    text-align: center;
+}
+.pic_data{
+    border:solid #000000;
+    border-width: 1px;
+    width: 180px;
+    height: 120px;
+    padding: 0px;
+    margin: 0px 3px;
+}
+.pic_data:active{
+    width: 360px;
+    height: 240px;
+}
+.ss-image {
+    width: 90%;
+    height: 70%;
+    padding: 0px 5%;
+    margin: 0px;
+    border-radius: 13%;
+}
+#result{
+    text-decoration: underline;
+    color: crimson;
+}
+.sentence{
+    margin-left:7px;
+}
+.under-title{
+    margin-top:60px;
+}
+.cal{
+    margin-top:5px;
+    margin-left:7px;
+}
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-color: #000000;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    padding: 0 10px;
+    height: 40px;
+    width: 300px;
+    position: relative;
+    background: #cfcedb;
+}
+option[selected][disabled] {
+    display: none;
+}
+#cal1{
+    padding-bottom: 5px;
+}
+.input{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.input:hover{
+    box-shadow: 0 0 10px 0 #D09B52;
+}

@@ -1,0 +1,44 @@
+.btn
+{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  font: bold 12px Helvetica;
+}
+.btn-canvas{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.btn-green{
+  border-color: rgba(120, 190, 150, 1.0);
+  background-color: rgba(120, 190, 150, 0.2);
+}
+
+.btn-red{
+  border-color: rgba(190, 120, 150, 1.0);
+  background-color: rgba(190, 120, 150, 0.2);
+}
+
+.btn-blue{
+    border-color: rgb(53, 100, 255);
+    background-color: rgba(147, 128, 255, 0.2);
+}
+
+.btn-purple{
+    border-color: rgb(230, 41, 255);
+    background-color: rgba(229, 99, 255, 0.795);
+}
+
+
+@media screen and (max-width:880px) { 
+  .btn{
+  width: 50px;
+  height: 50px;
+  font: bold 5px Helvetica;
+  }
+}
